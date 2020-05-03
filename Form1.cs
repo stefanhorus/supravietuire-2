@@ -125,7 +125,7 @@ namespace supravietuire
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-
+            //ssss
         }
 
         private void Tehnici_de_supravietuire_MouseHover(object sender, EventArgs e)
