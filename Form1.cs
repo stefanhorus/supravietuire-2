@@ -125,7 +125,12 @@ namespace supravietuire
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-            //ssss
+            joc j = new joc();
+            j.Left = supravietuire.ActiveForm.Left;
+            j.Top = supravietuire.ActiveForm.Top;
+            j.Height = supravietuire.ActiveForm.Height;
+            j.Width = supravietuire.ActiveForm.Width;
+            j.ShowDialog();
         }
 
         private void Tehnici_de_supravietuire_MouseHover(object sender, EventArgs e)
