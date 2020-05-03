@@ -58,6 +58,10 @@
     <Compile Include="F_padurea_tropicala.Designer.cs">
       <DependentUpon>F_padurea_tropicala.cs</DependentUpon>
     </Compile>
+    <Compile Include="joc.cs" />
+    <Compile Include="joc.Designer.cs">
+      <DependentUpon>joc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +69,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_padurea_tropicala.resx">
       <DependentUpon>F_padurea_tropicala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="joc.resx">
+      <DependentUpon>joc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
