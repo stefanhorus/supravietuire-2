@@ -33,7 +33,68 @@ namespace supravietuire
         }
         string Povestea;
         Pas[] p;
-        int nrPasi, energie, stima;
+        int nrPasi, energie, stima ,crt;
+
+        private void Incepe_Click(object sender, EventArgs e)
+        {
+            Incepe.Visible = false;
+            crt = 1;
+            poveste.Text = p[crt].povestePas;
+            poza.Image = Image.FromFile(Directory.GetCurrentDirectory() + @"\poveste\" + p[crt].poza);
+            varianta1.Text = p[crt].variante[1];
+            varianta2.Text = p[crt].variante[2];
+            if (p[crt].nrVariante > 2) { varianta3.Visible = true; varianta3.Text = p[crt].variante[3]; }
+            else varianta3.Visible = false;
+        }
+
+        private void varianta1_Click(object sender, EventArgs e)
+        {
+            energie += p[crt].energie[1];
+            stima += p[crt].stima[1];
+            Lenergie.Text = "Energie:" + energie.ToString();
+            Lstima.Text = "Stima:" + stima.ToString();
+            crt = p[crt].urmator[1];
+            if (energie <= 0 || stima <= 0) crt = nrPasi; // ai pierdut
+            poveste.Text = p[crt].povestePas;
+            poza.Image = Image.FromFile(Directory.GetCurrentDirectory() + @"\poveste\" + p[crt].poza);
+            varianta1.Text = p[crt].variante[1];
+            varianta2.Text = p[crt].variante[2];
+            if (p[crt].nrVariante > 2) { varianta3.Visible = true; varianta3.Text = p[crt].variante[3]; }
+            else varianta3.Visible = false;
+        }
+
+        private void varianta2_Click(object sender, EventArgs e)
+        {
+            energie += p[crt].energie[2];
+            stima += p[crt].stima[2];
+            Lenergie.Text = "Energie:" + energie.ToString();
+            Lstima.Text = "Stima:" + stima.ToString();
+            crt = p[crt].urmator[2];
+            if (energie <= 0 || stima <= 0) crt = nrPasi; // ai pierdut
+            poveste.Text = p[crt].povestePas;
+            poza.Image = Image.FromFile(Directory.GetCurrentDirectory() + @"\poveste\" + p[crt].poza);
+            varianta1.Text = p[crt].variante[1];
+            varianta2.Text = p[crt].variante[2];
+            if (p[crt].nrVariante > 2) { varianta3.Visible = true; varianta3.Text = p[crt].variante[3]; }
+            else varianta3.Visible = false;
+        }
+
+        private void varianta3_Click(object sender, EventArgs e)
+        {
+            energie += p[crt].energie[3];
+            stima += p[crt].stima[3];
+            Lenergie.Text = "Energie:" + energie.ToString();
+            Lstima.Text = "Stima:" + stima.ToString();
+            crt = p[crt].urmator[3];
+            if (energie <= 0 || stima <= 0) crt = nrPasi; // ai pierdut
+            poveste.Text = p[crt].povestePas;
+            poza.Image = Image.FromFile(Directory.GetCurrentDirectory() + @"\poveste\" + p[crt].poza);
+            varianta1.Text = p[crt].variante[1];
+            varianta2.Text = p[crt].variante[2];
+            if (p[crt].nrVariante > 2) { varianta3.Visible = true; varianta3.Text = p[crt].variante[3]; }
+            else varianta3.Visible = false;
+        }
+
         void initializare(string nume)
         {
             try
@@ -77,7 +138,9 @@ namespace supravietuire
 
         private void joc_Load(object sender, EventArgs e)
         {
-
+            poveste.Text = Povestea;
+            Lenergie.Text = "Energie:" + energie.ToString();
+            Lstima.Text = "Stima:" + stima.ToString();
         }
     }
 }
