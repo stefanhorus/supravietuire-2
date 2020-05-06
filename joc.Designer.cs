@@ -43,7 +43,7 @@
             // 
             this.poveste.Location = new System.Drawing.Point(13, 13);
             this.poveste.Name = "poveste";
-            this.poveste.Size = new System.Drawing.Size(1168, 130);
+            this.poveste.Size = new System.Drawing.Size(1168, 106);
             this.poveste.TabIndex = 0;
             this.poveste.Text = "label1";
             // 
@@ -88,7 +88,7 @@
             // Lstima
             // 
             this.Lstima.AutoSize = true;
-            this.Lstima.Location = new System.Drawing.Point(1289, 13);
+            this.Lstima.Location = new System.Drawing.Point(1259, 13);
             this.Lstima.Name = "Lstima";
             this.Lstima.Size = new System.Drawing.Size(46, 17);
             this.Lstima.TabIndex = 5;
@@ -97,7 +97,7 @@
             // Lenergie
             // 
             this.Lenergie.AutoSize = true;
-            this.Lenergie.Location = new System.Drawing.Point(1211, 13);
+            this.Lenergie.Location = new System.Drawing.Point(1187, 13);
             this.Lenergie.Name = "Lenergie";
             this.Lenergie.Size = new System.Drawing.Size(46, 17);
             this.Lenergie.TabIndex = 6;
