@@ -33,7 +33,7 @@ namespace supravietuire
         }
         string Povestea;
         Pas[] p;
-        int nrPasi, energie, stima ,crt;
+        int nrPasi, energie=80, stima=90 ,crt;
 
         private void Incepe_Click(object sender, EventArgs e)
         {
@@ -50,7 +50,11 @@ namespace supravietuire
         private void varianta1_Click(object sender, EventArgs e)
         {
             energie += p[crt].energie[1];
+            if (energie > 100)
+                energie = 100;
             stima += p[crt].stima[1];
+            if (stima > 100)
+                stima = 100;
             Lenergie.Text = "Energie:" + energie.ToString();
             Lstima.Text = "Stima:" + stima.ToString();
             crt = p[crt].urmator[1];
@@ -66,7 +70,11 @@ namespace supravietuire
         private void varianta2_Click(object sender, EventArgs e)
         {
             energie += p[crt].energie[2];
+            if (energie > 100)
+                energie = 100;
             stima += p[crt].stima[2];
+            if (stima > 100)
+                stima = 100;
             Lenergie.Text = "Energie:" + energie.ToString();
             Lstima.Text = "Stima:" + stima.ToString();
             crt = p[crt].urmator[2];
@@ -82,7 +90,11 @@ namespace supravietuire
         private void varianta3_Click(object sender, EventArgs e)
         {
             energie += p[crt].energie[3];
+            if (energie > 100)
+                energie = 100;
             stima += p[crt].stima[3];
+            if (stima > 100)
+                stima = 100;
             Lenergie.Text = "Energie:" + energie.ToString();
             Lstima.Text = "Stima:" + stima.ToString();
             crt = p[crt].urmator[3];

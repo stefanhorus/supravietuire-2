@@ -51,44 +51,42 @@
             // 
             this.poza.Location = new System.Drawing.Point(12, 122);
             this.poza.Name = "poza";
-            this.poza.Size = new System.Drawing.Size(1324, 234);
+            this.poza.Size = new System.Drawing.Size(1324, 480);
+            this.poza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.poza.TabIndex = 1;
             this.poza.TabStop = false;
             // 
             // varianta1
             // 
             this.varianta1.AutoSize = true;
-            this.varianta1.Location = new System.Drawing.Point(9, 386);
+            this.varianta1.Location = new System.Drawing.Point(9, 620);
             this.varianta1.Name = "varianta1";
-            this.varianta1.Size = new System.Drawing.Size(46, 17);
+            this.varianta1.Size = new System.Drawing.Size(0, 17);
             this.varianta1.TabIndex = 2;
-            this.varianta1.Text = "label1";
             this.varianta1.Click += new System.EventHandler(this.varianta1_Click);
             // 
             // varianta2
             // 
             this.varianta2.AutoSize = true;
-            this.varianta2.Location = new System.Drawing.Point(9, 439);
+            this.varianta2.Location = new System.Drawing.Point(9, 660);
             this.varianta2.Name = "varianta2";
-            this.varianta2.Size = new System.Drawing.Size(46, 17);
+            this.varianta2.Size = new System.Drawing.Size(0, 17);
             this.varianta2.TabIndex = 3;
-            this.varianta2.Text = "label1";
             this.varianta2.Click += new System.EventHandler(this.varianta2_Click);
             // 
             // varianta3
             // 
             this.varianta3.AutoSize = true;
-            this.varianta3.Location = new System.Drawing.Point(9, 492);
+            this.varianta3.Location = new System.Drawing.Point(9, 700);
             this.varianta3.Name = "varianta3";
-            this.varianta3.Size = new System.Drawing.Size(46, 17);
+            this.varianta3.Size = new System.Drawing.Size(0, 17);
             this.varianta3.TabIndex = 4;
-            this.varianta3.Text = "label1";
             this.varianta3.Click += new System.EventHandler(this.varianta3_Click);
             // 
             // Lstima
             // 
             this.Lstima.AutoSize = true;
-            this.Lstima.Location = new System.Drawing.Point(1259, 13);
+            this.Lstima.Location = new System.Drawing.Point(1274, 13);
             this.Lstima.Name = "Lstima";
             this.Lstima.Size = new System.Drawing.Size(46, 17);
             this.Lstima.TabIndex = 5;
